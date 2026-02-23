@@ -22,7 +22,7 @@ export default function Dashboard() {
   return (
     <div className="space-y-6">
       {/* Stats row */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 md:gap-4">
         <StatsCard
           title="Revenue this month"
           value={`$${(stats?.revenue_this_month ?? 0).toFixed(0)}`}
