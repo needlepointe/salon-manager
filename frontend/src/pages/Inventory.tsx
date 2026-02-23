@@ -134,7 +134,7 @@ function ProductForm({
 export default function Inventory() {
   const qc = useQueryClient();
   const [showAdd, setShowAdd] = useState(false);
-  const [reorderAdvice, setReorderAdvice] = useState<unknown>(null);
+  const [reorderAdvice, setReorderAdvice] = useState<Record<string, unknown> | null>(null);
   const [advisorLoading, setAdvisorLoading] = useState(false);
 
   const { data: products, isLoading } = useQuery({
