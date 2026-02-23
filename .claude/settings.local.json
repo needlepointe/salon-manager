@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm --version:*)",
+      "Bash(powershell.exe -Command \"Add-Type -AssemblyName System.IO.Compression.FileSystem; $zip=[System.IO.Compression.ZipFile]::OpenRead\\(''C:\\\\Users\\\\Nick\\\\Salon.0.1\\\\Client_Retention_System.docx''\\); $entry=$zip.Entries|?{$_.FullName -eq ''word/document.xml''}; $sr=New-Object System.IO.StreamReader\\($entry.Open\\(\\)\\); $content=$sr.ReadToEnd\\(\\); $sr.Close\\(\\); $zip.Dispose\\(\\); $stripped=$content -replace ''<[^>]+>'',''''; $stripped -replace ''\\\\s+'','' ''\")",
+      "Bash(npm create:*)",
+      "Bash(cmd.exe /c \"node --version 2>&1 && npm --version 2>&1\")",
+      "Bash(cmd.exe /c \"where node 2>&1 && where npm 2>&1\")"
+    ]
+  }
+}

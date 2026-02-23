@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Salon Manager",
+    "slug": "salon-manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#7c3aed"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.salonmanager"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#7c3aed"
+      },
+      "package": "com.yourname.salonmanager"
+    },
+    "scheme": "salon-manager",
+    "plugins": ["expo-router"]
+  }
+}
