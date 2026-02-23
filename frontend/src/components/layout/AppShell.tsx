@@ -9,7 +9,7 @@ interface Props {
 
 export default function AppShell({ children }: Props) {
   return (
-    <div className="flex h-screen bg-gray-50 overflow-hidden">
+    <div className="flex h-screen bg-gray-50 overflow-hidden" style={{ paddingTop: "env(safe-area-inset-top)" }}>
       {/* Sidebar — desktop only */}
       <div className="hidden md:flex">
         <Sidebar />
